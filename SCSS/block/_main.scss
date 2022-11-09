@@ -1,0 +1,59 @@
+.main{
+	min-height: 100vh;
+	display: flex;
+
+	.sideBar{display: none;}
+	@media (min-width: 800px) {
+		.sideBar{
+			box-sizing: border-box;
+			display: block;
+			padding: 10px;
+			background-color: #3A4449;
+			width: 20%;
+			min-height: 100%;
+			position: static;
+		}
+	}
+	.content{
+		width: 80%;
+		box-sizing: border-box;
+		padding: 25px;
+		display: grid;
+		grid-template-columns: repeat(4, 20%);
+		grid-template-rows: repeat(2, 1fr);
+		gap:5% ;
+		@media (max-width:800px) {
+			width: 100%;
+			padding: 15px;
+			grid-template-columns: repeat(2, 40%);
+			gap: 17.5%;
+		}
+	}
+	.section-content{
+		text-align: center;
+		background: #8F9FCA;
+		padding: 10px;
+		border-radius: 10px;
+		.title{
+			color: #F2FFFC;
+			font-size: 1.5rem;
+		}
+		.scene{
+			box-sizing: border-box;
+			margin: 10px auto;
+			background-color: #fff;
+			width: 100px;
+			height: 100px;
+			display: flex;
+			align-items: end;
+			.block{
+				margin: 0 ((100% / 2) - 20);
+				background: black;
+				width: 40px;
+				height: 40px;
+			}
+		}
+		.descript{font-size: 1.2rem;}
+	}
+}
+@import '../animation/mainAnimation.scss';

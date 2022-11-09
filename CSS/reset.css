@@ -1,0 +1,44 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  font-size: 16px;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+html h1, html h2, html h3, html h4, html h5, html h6, html p {
+  margin: 0;
+}
+html p + p {
+  margin-top: 1rem;
+}
+html a, html ul {
+  color: inherit;
+  text-decoration: none;
+}
+html ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html input, html button {
+  border: none;
+  background: none;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+html label {
+  cursor: pointer;
+}
+html svg {
+  max-width: 100%;
+  height: auto;
+}

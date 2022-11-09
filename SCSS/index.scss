@@ -1,0 +1,11 @@
+@use './elements/nav.scss';
+@use './block/header';
+@use './block/main';
+@use './block/footer';
+body{
+	overflow-x: hidden;
+	background-color: #273136;
+	color: #EFEFEF;
+	display: flex;
+	flex-direction: column;
+}

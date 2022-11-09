@@ -1,0 +1,29 @@
+#Jump{animation: jump 1.3s 0.5s infinite;}
+@keyframes jump{
+	0%{transform: translateY(0)}
+	25%{transform: translateY(4px) scaleY(.8)}
+	50%{transform: translateY(-100%) scaleY(1.1)}
+	75%{transform: translateY(5px) scaleY(.8)}
+	100%{transform: translateY(0) scaleY(1)}
+}
+#Rotate{
+	margin: auto auto;
+	animation: 1s rotate infinite;
+}
+@keyframes rotate{
+	0%{transform: rotateZ(0rad);}
+	25%{transform: rotateZ(90rad);}
+	50%{transform: rotateZ(180rad);}
+	75%{transform: rotateZ(270rad);}
+	100%{transform: rotateZ(360rad);}
+}
+#Border-next{
+	animation: border-next 5s infinite;
+}
+@keyframes border-next{
+	0%{transform: translate(-78%, 0);}
+	25%{transform: translate(-78%, -150%);}
+	50%{transform: translate(78%, -150%);}
+	75%{transform: translate(78%, 0);}
+	100%{transform: translate(-78%, 0);}
+}
